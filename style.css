@@ -6,4 +6,12 @@ body {
 	text-align: center;
 	font-family: arial;
 	color: white;
+	margin-bottom: 100px;
+}
+
+.center { 
+	display: block;
+	margin-right: auto; 
+	margin-left: auto; 
+	width: 1200px; 
 }
