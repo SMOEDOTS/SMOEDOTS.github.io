@@ -1,0 +1,13 @@
+{
+"companyName": "SMOEDOTS",
+"productName": "D O D G E",
+"dataUrl": "DODGE.data.unityweb",
+"asmCodeUrl": "DODGE.asm.code.unityweb",
+"asmMemoryUrl": "DODGE.asm.memory.unityweb",
+"asmFrameworkUrl": "DODGE.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
