@@ -1,5 +1,5 @@
 var seriesInfo = [
-		{"sNum":0,"last":53,"vids":[18,24],"title":"Of Taxes and Crabs","sTitle":"OTaC","wip":false,"folder":"OTaC/"},
+		{"sNum":0,"last":53,"vids":[18,24],"title":"Of Taxes and Crabs","sTitle":"OTaC","wip":false,"folder":"OTAC/"},
 		{"sNum":1,"last":25,"vids":[],"title":"War [of the] Kraft","sTitle":"WotK","wip":false,"folder":"WotK/"},
 		{"sNum":2,"last":30,"vids":[],"title":"Consider: Supreme Duck","sTitle":"C:SD","wip":false,"folder":"CSD/"},
 		{"sNum":3,"last":19,"vids":[14,16],"title":"The Evasion of Yosh","sTitle":"TEoY","wip":false,"folder":"TEoY/"},
