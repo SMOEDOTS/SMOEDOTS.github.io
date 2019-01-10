@@ -90,26 +90,6 @@ function updateUrl(){
 }
 
 function preload(){
-	/*
-	* var content = "";
-	* for(i=0;i<arguments.length;i++){
-	* 	var isVid = false;
-	* 	for(h=0;h<seriesJSON.vids.length;h++){
-	* 		if(arguments[i] == seriesJSON.vids[h]){
-	* 			content += '<video src="'+ seriesJSON.folder + arguments[i] + '.mov" width="900"></video>';
-	* 			isVid = true;
-	* 			break;
-	* 		}
-	* 	}
-	* 	if(!isVid){
-	* 		content += '<img src="'+ seriesJSON.folder + arguments[i] + '.png" width="900">';
-	* 	}
-	* 	console.log("loaded " + arguments[i]);
-	* }
-	* content += '<img src="end.png" width="900">'
-	* content += '<img src="tbc.png" width="900">'
-	* document.getElementById("idPreload").innerHTML = content;
-	*/
 	for(i=0;i<arguments.length;i++){
 		var isVid = false;
 		for(h=0;h<seriesJSON.vids.length;h++){
