@@ -1,5 +1,4 @@
 # SMOEDOTS.github.io
-Website
+Dank Webcomics
 
-Random stuff, games, and videos.
-Have fun.
+some other stuff
