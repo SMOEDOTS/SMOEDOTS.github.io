@@ -7,6 +7,7 @@ var seriesInfo = [
 	];
 var index = 1;
 var seriesJSON;
+var imgs = [];
 function changeImage(action){
 	index += action;
 	
@@ -58,7 +59,7 @@ function changeImage(action){
 		}
 	}
 	if(!isVid){
-		document.getElementById("idImgDiv").innerHTML = '<img preload src="'+ seriesJSON.folder + index + '.png" width="900">';
+		document.getElementById("idImgDiv").innerHTML = '<img src="'+ seriesJSON.folder + index + '.png" width="900">';
 	}
 	
 	updateUrl();
@@ -89,6 +90,7 @@ function updateUrl(){
 }
 
 function preload(){
+	/*
 	var content = "";
 	for(i=0;i<arguments.length;i++){
 		var isVid = false;
@@ -100,13 +102,36 @@ function preload(){
 			}
 		}
 		if(!isVid){
-			content += '<img preload src="'+ seriesJSON.folder + arguments[i] + '.png" width="900">';
+			content += '<img src="'+ seriesJSON.folder + arguments[i] + '.png" width="900">';
 		}
 		console.log("loaded " + arguments[i]);
 	}
-	content += '<img preload src="end.png" width="900">'
-	content += '<img preload src="tbc.png" width="900">'
+	content += '<img src="end.png" width="900">'
+	content += '<img src="tbc.png" width="900">'
 	document.getElementById("idPreload").innerHSTML = content;
+	*/
+	for(i=0;i<arguments.length;i++){
+		var isVid = false;
+		for(h=0;h<seriesJSON.vids.length;h++){
+			if(arguments[i] == seriesJSON.vids[h]){
+				imgs.push((new Image()).src = (seriesJSON.folder + arguments[i] + '.mov'));
+				isVid = true;
+				break;
+			}
+		}
+		if(!isVid){
+			imgs.push((new Image()).src = (seriesJSON.folder + arguments[i] + '.png'));
+		}
+		console.log("loaded " + arguments[i]);
+	}
+	imgs.push((new Image()).src = "end.png");
+	imgs.push((new Image()).src = "tbc.png");
+	
+	if(imgs.length > 4){
+		for(i=0;i < (imgs.length - 4);i++){
+			imgs.shift();
+		}
+	}
 }
 
 function init(){
