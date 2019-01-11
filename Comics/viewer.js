@@ -95,7 +95,6 @@ function preload(){
 		var isVid = false;
 		for(h=0;h<seriesJSON.vids.length;h++){
 			if(arguments[i] == seriesJSON.vids[h]){
-				imgs.push((new Image()).src = (seriesJSON.folder + arguments[i] + '.mov'));
 				isVid = true;
 				break;
 			}
