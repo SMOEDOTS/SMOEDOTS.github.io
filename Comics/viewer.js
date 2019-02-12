@@ -3,7 +3,7 @@ var seriesInfo = [
 		{"sNum":1,"last":25,"vids":[],"title":"War [of the] Kraft","sTitle":"WotK","wip":false,"folder":"WotK/"},
 		{"sNum":2,"last":30,"vids":[],"title":"Consider: Supreme Duck","sTitle":"C:SD","wip":false,"folder":"CSD/"},
 		{"sNum":3,"last":19,"vids":[14,16],"title":"The Evasion of Yosh","sTitle":"TEoY","wip":true,"folder":"TEoY/"},
-		{"sNum":4,"last":87,"vids":[7,19,38,57,59],"title":"The Year of the Lemon","sTitle":"TYotL","wip":true,"folder":"TYotL/"}
+		{"sNum":4,"last":88,"vids":[7,19,38,57,59],"title":"The Year of the Lemon","sTitle":"TYotL","wip":true,"folder":"TYotL/"}
 	];
 var index = 1;
 var seriesJSON;
